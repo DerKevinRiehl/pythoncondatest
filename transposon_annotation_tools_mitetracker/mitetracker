@@ -1,0 +1,6 @@
+#!/bin/bash
+MUSTPTH=$(which mitetracker)
+NEWPTH=$(dirname "${MUSTPTH}") # go to parent directory (=bin folder)
+PRLSPTH2="$NEWPTH/mitetrackerLIB/MITETracker.py"
+python "${PRLSPTH2}" $@
+#perl MUST.r2-4-002.Release/MUST_Pipe.pl $@
